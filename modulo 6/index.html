@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="todo-app" class="todo-app">
+      <h1>Minha Lista de Tarefas</h1>
+      <div class="input-group">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Digite a descrição da nova tarefa..."
+          onkeypress="if(event.key === 'Enter') document.getElementById('add-button').click()"
+        />
+        <button id="add-button" onclick="addTask()">Adicionar</button>
+      </div>
+
+      <div id="tasks-list">
+        <!-- As tarefas serão inseridas aqui -->
+      </div>
+    </div>
+
+    <script src="/modulo 6/index.js"></script>
+  </body>
+</html>
