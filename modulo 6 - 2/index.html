@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Curtidas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Quem curtiu?</h1>
+
+      <div class="input-group">
+        <input
+          id="nameInput"
+          type="text"
+          placeholder="Seu nome aqui..."
+          aria-label="Campo para digitar o nome"
+        />
+        <button id="likeButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 11-3 0v-6zM6 10.333v5.432a2.502 2.502 0 002.504 2.504h2.951a2.502 2.502 0 002.486-2.09l.481-2.91a.5.5 0 00-.546-.57l-4.706-.523a1 1 0 01-.892-.816l-.234-1.17A2.001 2.001 0 009.68 6.5l2.748-1.543a1 1 0 00.32-.979l-.29-1.455A1 1 0 0012.162 2H9.191A2.001 2.001 0 007.2 3.824l-.195 1.171a.5.5 0 01-.525.437l-1.928.322a.5.5 0 00-.362.478z"
+            />
+          </svg>
+          Curtir
+        </button>
+      </div>
+
+      <p id="likesDisplay"></p>
+
+      <div id="errorMessage" class="hidden" role="alert">
+        <span></span>
+      </div>
+    </div>
+
+    <script src="/modulo 6 - 2/index.js"></script>
+  </body>
+</html>
