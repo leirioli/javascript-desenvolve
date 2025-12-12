@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #0366d6;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#username-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+#search-button:hover {
+    background-color: #218838;
+}
+
+/* Estilo para a lista de resultados */
+.user-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info h2 {
+    margin: 0 0 5px 0;
+    color: #0366d6;
+}
+
+.user-info p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message {
+    text-align: center;
+    color: #dc3545;
+    font-weight: bold;
+}
